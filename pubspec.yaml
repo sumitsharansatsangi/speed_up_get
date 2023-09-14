@@ -1,23 +1,27 @@
 name: speed_up_get
+publish_to: none
 description: Package to speed up GetX.
 version: 0.0.4
 homepage: https://github.com/AndrewPiterov/speed_up_get
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=3.1.0 <4.0.0"
+  flutter: ">=3.13.0"
 
 dependencies:
   equatable: ^2.0.5
   flutter:
     sdk: flutter
-  get: ^4.6.5
+  get: 
+    git: https://github.com/kumsumit/get.git
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints:
+    git: https://github.com/kumsumit/flutter_lints.git
   shouldly: ^0.5.0+1
-  given_when_then_unit_test: ^0.1.0
+  given_when_then_unit_test: ^0.2.1
   
 flutter:
